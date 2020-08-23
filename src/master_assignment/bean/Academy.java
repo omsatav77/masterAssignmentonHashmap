@@ -5,16 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Academy {
-//	show student result for
-//	course id
-//	and test
-//	id sorted
-//	from topper
-//	to lowest
-//	marks.If student
-//	marks are
-//	equal sort
-//	on their names
+	// Show one table which has course name , course start date and total students,
+	// total revenue till date, total left fees, total projected revenue, percentage
+	// collection till date 
 
 	// arraylist object course
 	public static ArrayList<Course> courseList = new ArrayList<Course>();
