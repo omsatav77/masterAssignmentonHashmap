@@ -3,11 +3,9 @@ package longestPailandrome;
 import java.util.Scanner;
 
 public class pailandromeString {
-
-
-		//
 			  public static void main(String[] args) {
-			    Scanner scanner = new Scanner(System.in);
+				  Scanner scanner = new Scanner(System.in);
+				  System.out.println("enter String");
 			    String Str1 = scanner.next();
 			    String finalstr="";
 			    if(Str1.isEmpty()) {
@@ -36,7 +34,6 @@ public class pailandromeString {
 			  }
 			  System.out.println(finalstr);
 			  }
-		//
 			  }	
 
 
