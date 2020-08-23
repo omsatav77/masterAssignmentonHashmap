@@ -13,18 +13,22 @@ public class pailandromeString {
 			    }
 			    else {
 			    int n = Str1.length();
-			    int longestSoFar = 0, fst = 0, lst = 0;
-			    boolean[][] palindrom = new boolean[n][n];
+			    int lng = 0, fst = 0, lst = 0;
+			    boolean[][] pmatrx = new boolean[n][n];
 			    
-			    for(int j = 0; j < n; j++) {
-			    	palindrom[j][j] = true;
-			    	for(int i = 0; i < j; i++) {
-			    		if(Str1.charAt(i) == Str1.charAt(j) && (j-i <= 2 || palindrom[i+1][j-1])) {
-			    			palindrom[i][j] = true;
-			    			if(j-i+1 > longestSoFar) {
-			    				longestSoFar = j-i+1;
-			    				fst = i;
-			    				lst = j;
+			    for(int j = 0; j < n; j++) 
+			    {
+			   	pmatrx[j][j] = true;
+			   	for(int i = 0; i < j; i++) 
+			   	{
+		  		if(Str1.charAt(i) == Str1.charAt(j) && (j-i <= 2 || pmatrx[i+1][j-1])) 
+		  		{
+		  			pmatrx[i][j] = true;
+				if(j-i+1 > lng) 
+				{
+					lng = j-i+1;
+					fst = i;
+				lst = j;
 			    			}  
 			    		}
 			    	}
