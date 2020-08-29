@@ -5,4 +5,4 @@
  * @author Omkar
  *
  */
-package Day2pattern;
+package todoTrial;
